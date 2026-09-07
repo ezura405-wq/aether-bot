@@ -10,7 +10,7 @@ const client = new Client({
   ]
 });
 
-client.once("ready", async () => {
+client.once("clientReady", async () => {
   try {
     const commands = await client.application.commands.set([
       {
